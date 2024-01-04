@@ -1,0 +1,44 @@
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+    --default-color: #ee4d2d;
+    --icon--dark-color: rgba(117, 117, 117, 1);
+    --header-color: #ff7337;
+
+    --font-family: 'Roboto', sans-serif;
+}
+
+.searchPopper-wrap {
+    width: 775px;
+    border-radius: 3px;
+    background-color: var(--white-color);
+}
+
+.searchPopper-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.searchPopper-item {
+    height: 40px;
+    display: flex;
+    align-items: center;
+
+    &:hover {
+        opacity: 0.6;
+        cursor: pointer;
+    }
+}
+
+.searchPopper-item-title {
+    font-size: 1.6rem;
+    margin-left: 15px;
+}
+
+.searchPopper-item-icon {
+    width: 20px;
+    height: 20px;
+    color: var(--default-color);
+    margin-left: 15px;
+}

@@ -1,0 +1,143 @@
+.wrap-login-page {
+    width: 100%;
+    height: 665px;
+    display: flex;
+    flex-direction: column;
+    background-image: url('https://down-vn.img.susercontent.com/file/sg-11134004-7rbm1-lphq0ly9tv1f25');
+}
+
+.login-from {
+    width: 400px;
+    // height: 430px;
+    background-color: var(--white-color);
+    margin-top: 50px;
+    margin-left: 840px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    // align-items: center;
+}
+
+.login-form-title {
+    font-size: 2.6rem;
+    font-weight: 400;
+    text-align: left;
+}
+
+.login-form-input {
+    width: 100%;
+    height: 40px;
+    padding: 12px;
+    border: 1px solid var(--default-color);
+    border-color: var(--default-color);
+    margin-top: 20px;
+    cursor: pointer;
+
+    &:focus {
+        border: none;
+        border-color: var(--default-color);
+    }
+}
+
+.login-form-message {
+    color: var(--default-color);
+    font-size: 1.4rem;
+    margin-top: 5px;
+}
+
+.login-form-btn {
+    height: 40px;
+    border-radius: 5px;
+    background-color: var(--default-color);
+    opacity: 0.6;
+    color: var(--white-color);
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 0.4;
+    }
+}
+
+.record-password {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.record-password-link {
+    text-decoration: none;
+}
+
+.record-password-title {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: rgb(28, 76, 121);
+}
+
+.login-form-separate {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-form-separate-underlined {
+    width: 100px;
+    border-bottom: 1px solid;
+    border-color: #333;
+    opacity: 0.4;
+}
+
+.login-form-separate-title {
+    font-size: 1.6rem;
+    color: #333;
+    opacity: 0.4;
+}
+
+.login-form-contact {
+    display: flex;
+    justify-content: space-around;
+}
+
+.login-form-contact-btn {
+    height: 40px;
+    width: 49%;
+    border-radius: 5px;
+    background-color: var(--white-color);
+    color: #333;
+    opacity: 0.6;
+    margin-top: 20px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: var(--default-color);
+        color: var(--white-color);
+    }
+}
+
+.login-form-title-policyAgreement {
+    font-size: 1.4rem;
+    font-weight: 300;
+    text-align: center;
+    margin: 30px 5px;
+}
+
+.login-from-help {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-from-help-title {
+    font-size: 1.4rem;
+    color: #333;
+    opacity: 0.4;
+}
+
+.login-from-help-login {
+    font-size: 1.4rem;
+    color: var(--default-color);
+}

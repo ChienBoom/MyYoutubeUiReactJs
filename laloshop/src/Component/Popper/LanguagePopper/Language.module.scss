@@ -1,0 +1,41 @@
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+    --default-color: #ee4d2d;
+    --icon--dark-color: rgba(117, 117, 117, 1);
+    --header-color: #ff7337;
+
+    --font-family: 'Roboto', sans-serif;
+}
+
+.language-list {
+    width: 200px;
+    background-color: var(--white-color);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.language-item {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+        opacity: 0.6;
+        color: var(--default-color);
+    }
+}
+
+.language-item-title {
+    font-size: 1.8rem;
+    color: var(--icon--dark-color);
+
+    &:hover {
+        color: var(--default-color);
+    }
+}

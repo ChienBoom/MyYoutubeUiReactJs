@@ -1,0 +1,59 @@
+.product-img {
+    width: 480px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white-color);
+}
+
+.img-main {
+    width: 450px;
+    height: 450px;
+}
+
+.lst-img-item {
+    display: flex;
+}
+
+.img-children {
+    width: 82px;
+    height: 82px;
+    padding: 5px;
+}
+
+.share {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.share-title {
+    font-size: 1.8rem;
+    margin-right: 15px;
+}
+
+.share-icon {
+    width: 25px;
+    height: 25px;
+}
+
+.share-icon + .share-icon {
+    margin-left: 5px;
+}
+
+.icon-facebook {
+    color: #1808a5;
+}
+
+.icon-messenger {
+    color: #1fa6cf;
+}
+
+.icon-pinterest {
+    color: #a50808;
+}
+.icon-twitter {
+    color: #23c4da;
+}

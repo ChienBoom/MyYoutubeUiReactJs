@@ -1,0 +1,35 @@
+.event-navbar {
+    margin-top: 30px;
+    display: flex;
+    background-color: var(--white-color);
+}
+
+.event-navbar-item {
+    height: 81px;
+    width: 100px;
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.event-navbar-item-icon {
+    width: 50px;
+    height: 50px;
+    /* margin-left: 25px; */
+}
+
+.event-navbar-item-icon:hover {
+    width: 55px;
+    height: 55px;
+    /* margin-left: 25px; */
+}
+
+.event-navbar-item-title {
+    width: 100px;
+    height: 28px;
+    margin-top: 5px;
+    text-align: center;
+    font-size: 1.2rem;
+}

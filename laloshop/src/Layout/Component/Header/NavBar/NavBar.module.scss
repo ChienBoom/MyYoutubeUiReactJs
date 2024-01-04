@@ -1,0 +1,57 @@
+.navbar {
+    display: flex;
+    line-height: 1.2rem;
+    justify-content: space-between;
+}
+
+.navbar-list {
+    display: flex;
+    padding-left: 0px;
+    text-align: center;
+}
+
+.navbar-item,
+.navbar-item-icon,
+.navbar-link {
+    list-style: none;
+    color: var(--white-color);
+    font-size: 1.4rem;
+    text-decoration: none; /*bo gach chan*/
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.navbar-item:hover {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.navbar-item-icon:hover {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.navbar-link:hover {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.navbar-item {
+    margin: 0 8px;
+    position: relative;
+}
+
+.navbar-item-icon {
+    margin-right: 0px;
+    margin-left: 8px;
+}
+.navbar-link-bold {
+    font-weight: 400;
+}
+
+.item-separate::after {
+    content: '';
+    display: block;
+    position: absolute;
+    border-left: 1px solid var(--white-color);
+    top: 0;
+    right: -8px;
+    height: 12px;
+}

@@ -1,0 +1,33 @@
+.event {
+    /* height: 235px; */
+    margin-top: 40px;
+    display: flex;
+    background-color: var(--white-color);
+}
+
+.event-img {
+    width: 796px;
+    cursor: pointer;
+}
+
+.event-img:hover {
+    opacity: 0.6;
+}
+
+.event-item {
+    margin-left: 6px;
+}
+
+.event-item-img {
+    width: 398px;
+    height: 115px;
+    cursor: pointer;
+}
+
+.event-item-img:hover {
+    opacity: 0.6;
+}
+
+.event-item-img + .event-item-img {
+    margin-top: 6px;
+}

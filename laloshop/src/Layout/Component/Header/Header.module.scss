@@ -1,0 +1,9 @@
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+    background-image: linear-gradient(var(--default-color), var(--header-color)); /*tao chuyen doi giua 2 mau*/
+}

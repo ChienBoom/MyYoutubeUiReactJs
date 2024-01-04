@@ -1,0 +1,48 @@
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+    --default-color: #ee4d2d;
+    --icon--dark-color: rgba(117, 117, 117, 1);
+    --header-color: #ff7337;
+
+    --font-family: 'Roboto', sans-serif;
+}
+
+.downloadPopper {
+    width: 200px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--white-color);
+}
+
+.download-image {
+}
+
+.download-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.download-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.download-item + .download-item {
+    margin-left: 15px;
+}
+
+.download-item-icon {
+    width: 20px;
+    height: 20px;
+    color: var(--icon--dark-color);
+}
+
+.download-item-title {
+    color: var(--icon--dark-color);
+    font-size: 1.2rem;
+}
