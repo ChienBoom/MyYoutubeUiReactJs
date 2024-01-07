@@ -7,10 +7,10 @@ const cx = classNames.bind(styles);
 
 function ProductLayout({ children }) {
     return (
-        <>
+        <div className={cx('wrapper')}>
             <Header />
             <div className={cx('container')}>{children}</div>
-        </>
+        </div>
     );
 }
 

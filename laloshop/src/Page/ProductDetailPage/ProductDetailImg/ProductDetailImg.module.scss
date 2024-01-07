@@ -10,6 +10,11 @@
 .img-main {
     width: 450px;
     height: 450px;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 0.6;
+    }
 }
 
 .lst-img-item {
@@ -20,6 +25,11 @@
     width: 82px;
     height: 82px;
     padding: 5px;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 0.6;
+    }
 }
 
 .share {
@@ -45,15 +55,32 @@
 
 .icon-facebook {
     color: #1808a5;
+
+    &:hover {
+        opacity: 0.6;
+    }
 }
 
 .icon-messenger {
     color: #1fa6cf;
+
+    &:hover {
+        opacity: 0.6;
+    }
 }
 
 .icon-pinterest {
     color: #a50808;
+
+    &:hover {
+        opacity: 0.6;
+    }
 }
+
 .icon-twitter {
     color: #23c4da;
+
+    &:hover {
+        opacity: 0.6;
+    }
 }

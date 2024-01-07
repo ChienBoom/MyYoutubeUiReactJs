@@ -1,14 +1,10 @@
 import classNames from 'classnames/bind';
-import styles from './Product.module.scss';
-
-import { Link } from 'react-router-dom';
-
-import config from '~/Config';
+import styles from './RelatedProducts.module.scss';
 
 const cx = classNames.bind(styles);
 
-function Product() {
-    const lstProduct = [
+function RelatedProducts() {
+    const lsdProduct = [
         {
             path: 'https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lpjogpo3qy45b4_tn',
             title: 'Chuột không dây - Chuột M220 Không dây',
@@ -46,13 +42,11 @@ function Product() {
             note: 'Đã bán 19.8k',
         },
     ];
-
     return (
-        <div className={cx('product')}>
-            <div className={cx('product-title')}>GỢI Ý HÔM NAY</div>
-            <div className={cx('product-separate')}></div>
+        <div>
+            <span>CÁC SẢN PHẨM KHÁC CỦA SHOP</span>
             <div className={cx('product-list')}>
-                {lstProduct.map((item, index) => (
+                {lsdProduct.map((item, index) => (
                     <Link className={cx('product-item-link')} to={config.routes.product}>
                         <div key={index} className={cx('product-item')}>
                             <img className={cx('product-item-img')} src={item.path} alt="" />
@@ -69,4 +63,4 @@ function Product() {
     );
 }
 
-export default Product;
+export default RelatedProducts;

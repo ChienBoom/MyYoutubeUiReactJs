@@ -13,9 +13,11 @@ function ProductDetailInfo() {
                 1Z240102
             </span>
             <div className={cx('product-evaluate')}>
-                <span>Chưa có đánh giá</span>
-                <span>0 đã bán</span>
-                <span>Tố cáo</span>
+                <div className={cx('product-evaluate-title')}>
+                    <span>Chưa có đánh giá</span>
+                    <span className={cx('product-evaluate-solid')}>0 đã bán</span>
+                </div>
+                <span className={cx('product-evaluate-report')}>Tố cáo</span>
             </div>
             <div className={cx('product-price')}>
                 <div className={cx('product-price-title')}>399.000đ - 599.000đ</div>

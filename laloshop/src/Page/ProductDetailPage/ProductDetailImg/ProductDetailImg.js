@@ -2,6 +2,7 @@ import classNames from 'classnames/bind';
 import styles from './ProductDetailImg.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faFacebookMessenger, faPinterest, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { useState, useEffect } from 'react';
 
 const cx = classNames.bind(styles);
 
@@ -28,17 +29,27 @@ function ProductDetailImg() {
             name: '5',
         },
     ];
+
+    const [mainImg, setMainImg] = useState(
+        'https://down-vn.img.susercontent.com/file/cn-11134207-7r98o-lq0drdzqklrp2e',
+    );
+
+    useEffect(() => {}, [mainImg]);
+
     return (
         <div className={cx('product-img')}>
-            <img
-                className={cx('img-main')}
-                src="https://down-vn.img.susercontent.com/file/cn-11134207-7r98o-lq0drdzfq3o852"
-                alt="anh"
-            />
+            <img className={cx('img-main')} src={mainImg} alt="anh" />
             <div className={cx('lst-img-item')}>
                 {lstProductImg.map((item, index) => (
                     <div key={index} className={cx('img-item')}>
-                        <img className={cx('img-children')} src={item.path} alt="anh" />
+                        <img
+                            className={cx('img-children')}
+                            src={item.path}
+                            alt="anh"
+                            onClick={() => {
+                                setMainImg(item.path);
+                            }}
+                        />
                     </div>
                 ))}
             </div>
